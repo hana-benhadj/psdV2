@@ -207,6 +207,8 @@
     <Content Include="Content\Capture.PNG" />
     <Content Include="Content\err.png" />
     <Content Include="Content\error.PNG" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -265,6 +267,7 @@
     <Content Include="Views\Shared\Inputs.cshtml" />
     <Content Include="Views\Shared\ButtonsAndRadio.cshtml" />
     <Content Include="Views\Shared\List.cshtml" />
+    <Content Include="Views\Shared\PlayerButtons.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
