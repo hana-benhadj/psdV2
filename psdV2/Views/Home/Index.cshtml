@@ -1,8 +1,6 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-
 <title>Bootstrap Example</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<link href="~/Content/style.css" rel="stylesheet" />
 
 <style>
     .item {
@@ -23,9 +22,6 @@
         height: 100px;
     }
 </style>
-
-
-
 
 @*nav bar*@
 
@@ -50,54 +46,52 @@
         <a class="nav-link item" href="#">CONTACT</a>
     </li>
 </ul><br>
-
 @*First row contains 3 cols*@
 <div class="row" style="
     flex-wrap: wrap;
     margin-right: -126px;
     margin-left: -67px;
     /*border: solid;*/
-    margin-top: 2%;
-   ">
-
+    margin-top: 2%;">
     <div class="col-md-4 col1">
         @Html.Partial("List")
     </div>
     <div class="col-md-4 col1">
         @Html.Partial("ButtonsAndRadio")
         @Html.Partial("PlayerButtons")
-
-
     </div>
     <div class="col-md-4 col1">
 
         @Html.Partial("Inputs")
     </div>
 </div>
-
 @*second row contains 2 cols*@
-<div class="row" style="   
+<div class="row" style="
     margin-right: -126px;
     margin-left: -67px;">
     <div class="col-md-8">
-
         @Html.Partial("PsdTabs")
-
     </div>
     <div class="col-md-4 col1">
-
-
         <div class="input-group">
-            <input class="form-control" placeholder="SEARCH" style="    margin-left: 15%;
+            <input class="form-control" placeholder="SEARCH" style="margin-left: 15%;
     border-radius: 51px;
     width: 114%;
     height: 47px;">
-           
         </div>
-        <img src="~/Content/progress.PNG" style="          width: 73%;
-    margin-left: 14%;
-    margin-top: 6%;" />
-
+        @*<img src="~/Content/progress.PNG" style="width: 73%;
+            margin-left: 14%;
+            margin-top: 6%;" />*@
+        <div>
+            @Html.Partial("Progress")
+        </div>
+       
     </div>
-   
 </div>
+@section Scripts{
+    <script src="~/Content/jQuery-plugin-progressbar.js"></script>
+    <script>
+        $(".progress-bar1").loading();
+
+    </script>
+}

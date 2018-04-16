@@ -1,8 +1,18 @@
 ﻿@{
     ViewBag.Title = "About";
+    <link href="~/Content/style.css" rel="stylesheet" />
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
-@Html.Partial("PlayerButtons")
+@*<p>Use this area to provide additional information.</p>
+@Html.Partial("Progress")
+
+@section Scripts{
+   
+    <script src="~/Content/jQuery-plugin-progressbar.js"></script>
+    <script>
+        $(".progress-bar1").loading();
+
+    </script>
+}*@
