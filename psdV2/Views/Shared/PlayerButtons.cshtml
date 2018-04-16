@@ -6,71 +6,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.css" rel="stylesheet" />
-<style>
-    /* The switch - the box around the slider */
-    .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-    }
-
-        /* Hide default HTML checkbox */
-        .switch input {
-            display: none;
+    <style>
+        /* The switch - the box around the slider */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
         }
 
-    /* The slider */
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: -41px;
-        left: 274px;
-        right: 0;
-        bottom: 0;
-        background-color: #24AFB2;
-        -webkit-transition: .4s;
-        transition: .4s;
-        border: white;
-    }
+            /* Hide default HTML checkbox */
+            .switch input {
+                display: none;
+            }
 
-        .slider:before {
+        /* The slider */
+        .sliderr {
             position: absolute;
-            content: "";
-            height: 11px;
-            width: 26px;
-            left: 2px;
-            margin-bottom: -3%;
-            bottom: 4px;
-            background-color: #6D7B8D;
+            cursor: pointer;
+            top: -41px;
+            left: 274px;
+            right: 0;
+            bottom: 0;
+            background-color: #24AFB2;
             -webkit-transition: .4s;
             transition: .4s;
+            border: white;
         }
 
-    input:checked + .slider {
-        background-color: #CECECE;
-    }
+            .sliderr:before {
+                position: absolute;
+                content: "";
+                height: 11px;
+                width: 26px;
+                left: 2px;
+                margin-bottom: -3%;
+                bottom: 4px;
+                background-color: #6D7B8D;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
 
-    input:focus + .slider {
-        box-shadow: 0 0 5px #CECECE;
-        border: solid;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-    }
-
-    /* Rounded sliders */
-    .slider.round {
-        border-radius: 34px;
-    }
-
-        .slider.round:before {
-            border-radius: 50%;
+        input:checked + .sliderr {
+            background-color: #CECECE;
         }
-</style>
+
+        input:focus + .sliderr {
+            box-shadow: 0 0 5px #CECECE;
+            border: solid;
+        }
+
+        input:checked + .sliderr:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .sliderr.round {
+            border-radius: 34px;
+        }
+
+            .sliderr.round:before {
+                border-radius: 50%;
+            }
+    </style>
+    <style>
+        #ex1Slider .slider-selection {
+            background: #BABABA;
+        }
+    </style>
 </head>
 <body>
     @*in this div we put 3 Font Awesome Video Player Icons*@
@@ -93,10 +98,10 @@
 
 
     <div>
-        @*Rounded switch*@ 
+        @*Rounded switch*@
         <label class="switch">
             <input type="checkbox">
-            <span class="slider round"
+            <span class="sliderr round"
                   style="width: 65px;
     height: 40%;
     margin-top: 20%;"></span>
@@ -106,7 +111,7 @@
     <div>
         <label class="switch">
             <input type="checkbox">
-            <span class="slider round"
+            <span class="sliderr round"
                   style="width: 65px;
     height: 40%;
     margin-top: -52%;
@@ -114,19 +119,89 @@
 
         </label>
     </div>
+    @*Filter by price interval:*@ 
+    <div style="       width: 77%;
+    margin-left: 8%;    margin-top: -14%;">
+        <b></b> <input id="ex2" type="text" class="span2" value="" data-slider-min="10"
+                       data-slider-max="1000" data-slider-step="5"
+                       data-slider-value="[0,13000]" data-slider-id='ex2Slider' style="    width: 305px;" /> <b></b>
 
-    <div>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"
-                  style="    width: 321px;
-    margin-top: -51%;
-    margin-top: 68%;
-    margin-left: -411%;
-    margin-bottom: 36%;"></span>
-
-        </label>
+       
     </div>
+
+    <div style="    margin-left: 6%;
+    width: 100%;
+    margin-top: 7%;">
+        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" 
+               data-slider-max="20" data-slider-step="1" data-slider-value="14"  data-slider-tooltip="hide" 
+                        data-slider-handle="round"
+               style="    margin-top: 6%;
+    margin-left: 6%;
+    width: 80%;"/>
+    </div>
+    <script>
+
+    // With JQuery
+    $("#ex2").slider({});
+
+      </script>
+
+
+    <script>
+        // With JQuery
+        $('#ex1').slider({
+            formatter: function (value) {
+                return 'Current value: ' + value;
+            }
+        });
+
+       //colors
+        var RGBChange = function () {
+            $('#RGB').css('background', 'rgb(' + r.getValue() + ',' + g.getValue() + ',' + b.getValue() + ')')
+        };
+      
+        var g = $('#ex1').slider()
+            .on('slide', RGBChange)
+            .data('slider');
+
+        var g = $('#ex2').slider()
+            .on('slide', RGBChange)
+            .data('slider');   
+    </script>
+    <style>
+        #RGB {
+            height: 20px;
+            background: rgb(128, 128, 128);
+        }
+
+        #ex1Slider .slider-selection {
+            background: #24AFB2;
+        }
+
+        #RC .slider-handle {
+            background: red;
+        }
+
+        #ex2Slider .slider-selection {
+            background: #24AFB2;
+        }
+
+        #GC .slider-handle {
+            background: green;
+        }
+
+        #BC .slider-selection {
+            background: #8283FF;
+        }
+
+        #BC .slider-handle {
+            border-bottom-color: blue;
+        }
+
+        #R, #G, #B {
+            width: 300px;
+        }
+    </style>
 </body>
 </html>
 

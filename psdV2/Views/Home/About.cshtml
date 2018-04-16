@@ -6,13 +6,14 @@
 <h3>@ViewBag.Message</h3>
 
 @*<p>Use this area to provide additional information.</p>
-@Html.Partial("Progress")
+    @Html.Partial("Progress")
 
-@section Scripts{
-   
-    <script src="~/Content/jQuery-plugin-progressbar.js"></script>
-    <script>
-        $(".progress-bar1").loading();
+    @section Scripts{
 
-    </script>
-}*@
+        <script src="~/Content/jQuery-plugin-progressbar.js"></script>
+        <script>
+            $(".progress-bar1").loading();
+
+        </script>
+    }*@
+@Html.Partial("PlayerButtons")

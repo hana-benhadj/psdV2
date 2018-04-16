@@ -202,17 +202,29 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-slider.css" />
+    <Content Include="Content\bootstrap-slider.js" />
+    <Content Include="Content\bootstrap-slider.min.css" />
+    <Content Include="Content\bootstrap-slider.min.js" />
+    <Content Include="Content\bootstrap-tagsinput.css" />
+    <Content Include="Content\bootstrap-tagsinput.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Capture.PNG" />
     <Content Include="Content\err.png" />
     <Content Include="Content\error.PNG" />
+    <Content Include="Content\events.tests.js" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\input_with_object_items.tests.js" />
+    <Content Include="Content\input_with_string_items.tests.js" />
     <Content Include="Content\jQuery-plugin-progressbar.js" />
     <Content Include="Content\plugin.js" />
     <Content Include="Content\progress.PNG" />
+    <Content Include="Content\reproduced_bugs.tests.js" />
     <Content Include="Content\script.js" />
+    <Content Include="Content\select_with_object_items.tests.js" />
+    <Content Include="Content\select_with_string_items.tests.js" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
