@@ -1,9 +1,11 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+
 <title>Bootstrap Example</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -14,13 +16,9 @@
 <script src="~/Content/bootstrap-slider.js"></script>
 <script src="~/Content/bootstrap-slider.min.js"></script>
 <link href="~/Content/bootstrap-slider.min.css" rel="stylesheet" />
-
 <script src="~/Content/bootstrap-tagsinput.js"></script>
-
 <link href="~/Content/bootstrap-tagsinput.css" rel="stylesheet" />
-
-
-
+<link href="~/Content/Site.css" rel="stylesheet" />
 
 <style>
     .item {
@@ -73,7 +71,6 @@
         @Html.Partial("PlayerButtons")
     </div>
     <div class="col-md-4 col1">
-
         @Html.Partial("Inputs")
     </div>
 </div>
@@ -81,15 +78,12 @@
 <div class="row" style="
     margin-right: -126px;
     margin-left: -67px;">
-    <div class="col-md-8">
+    <div class="col-md-8 stnav">
         @Html.Partial("PsdTabs")
     </div>
     <div class="col-md-4 col1">
         <div class="input-group">
-            <input class="form-control" placeholder="SEARCH" style="margin-left: 15%;
-    border-radius: 51px;
-    width: 114%;
-    height: 47px;">
+            <input class="form-control srch" placeholder="SEARCH" style=" border-radius: 51px;" >
         </div>
         @*<img src="~/Content/progress.PNG" style="width: 73%;
             margin-left: 14%;
