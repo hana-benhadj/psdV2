@@ -1774,13 +1774,14 @@ textarea.form-control {
   cursor: pointer;
 }
 
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  float: left;
-  margin-left: -20px;
-}
+    .radio input[type="radio"],
+    .radio-inline input[type="radio"],
+    .checkbox input[type="checkbox"],
+    .checkbox-inline input[type="checkbox"] {
+        float: left;
+        margin-left: -45px;
+        margin-top: -23px;
+    }
 
 .radio + .radio,
 .checkbox + .checkbox {
@@ -1797,11 +1798,12 @@ textarea.form-control {
     cursor: pointer;
 }
 
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px;
-}
+    .radio-inline + .radio-inline,
+    .checkbox-inline + .checkbox-inline {
+    
+        margin-left: 10px;
+        margin-top: -68px;
+    }
 
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
@@ -6913,17 +6915,17 @@ fieldset[disabled] .btn {
             display: none !important;
         }
     }
-@media screen and (max-width: 991px) {
+/*@media screen and (max-width: 991px) {
     .form-control {
         margin-bottom: 25%;
     }
-}
+}*/
 /*@media screen and (max-width: 1189px) {
     .form-control {
         width: 96%;
     }
 }*/
-@media screen and (max-width: 1199px) {
+/*@media screen and (max-width: 1199px) {
     .form-control {
         display: block;
         width: 60%!important;
@@ -6944,7 +6946,14 @@ fieldset[disabled] .btn {
         vertical-align: middle;
         width: 45%;
     }
+}*/
+@media screen and (max-width: 991px) {
+
+    img {
+        width: 28% !important;
+        margin-top: -103px;
+    }
 }
-@media screen and (max-width: 988px) {
-  
-}
+
+
+

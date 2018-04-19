@@ -1,26 +1,96 @@
-﻿.progress-bar1 {
-    /*position: relative;*/
+﻿.lib-panel {
+    margin-bottom: 20Px;
+    margin-right: 25%;
+}
+.StylNav {
+    width: 110.4% !important;
+    margin-left: -6% !important;
+}
+    .lib-panel img {
+        width: 95%;
+        margin-top: 30px;
+        margin-left: 40px;
+        background-color: transparent;
+    }
+
+    .lib-panel .row,
+    .lib-panel .col-md-6 {
+        padding: 0;
+        margin-left: 0%;
+        /*margin-right: -33%;*/
+        background-color: #223645;
+    }
+
+
+    .lib-panel .lib-row {
+        padding: 0 20px 0 20px;
+    }
+
+        .lib-panel .lib-row.lib-header {
+            background-color: darkgrey;
+            font-size: 20px;
+            padding: 10px 20px 0 20px;
+            /*margin-left: 48%;*/
+        }
+
+            .lib-panel .lib-row.lib-header .lib-header-seperator {
+                height: 2px;
+                width: 26px;
+                background-color: #d9d9d9;
+                margin: 7px 0 7px 0;
+            }
+
+        .lib-panel .lib-row.lib-desc {
+            position: relative;
+            height: 68%;
+            font-size: 16px;
+            /*margin-left: -34%;*/
+            margin-top: 13%;
+            color: white;
+        }
+
+            .lib-panel .lib-row.lib-desc a {
+                position: absolute;
+                width: 100%;
+                bottom: 10px;
+                left: 20px;
+            }
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.no-padding {
+    padding: 0;
+}
+.progress-bar1 {
+    position: relative;
     height: 100px;
     width: 100px;
     margin: 0 auto;
 }
 
     .progress-bar1 div {
-        /*position: absolute;*/
+        position: absolute;
         height: 100px;
         width: 100px;
         border-radius: 50%;
     }
 
         .progress-bar1 div span {
-            /*position: absolute;*/
+            position: absolute;
             font-family: Arial;
             font-size: 25px;
             line-height: 75px;
             height: 75px;
             width: 75px;
-            /*left: 12.5px;
-            top: 12.5px;*/
+            left: 12.5px;
+            top: 12.5px;
             text-align: center;
             border-radius: 50%;
             background-color: white;
@@ -87,8 +157,8 @@
 }
 .iconDiv {
     width: 128px;
-    /*margin-top: -19%;*/
-    margin-left: 2%;
+    /* margin-top: -19%; */
+    margin-left: 36%;
 }
 .progress-bar-vertical {
     width: 20px;
@@ -103,11 +173,10 @@
     top: -25px;
     left: -6px;*/
     height: 52px;
-    width: 43px;
+    width: 39px;
     background-color: #24AFB2;
     border-radius: 50%;
     border-color: white;
-   
 }
     .progress-bar-vertical .progress-bar {
         width: 100%;
@@ -170,15 +239,19 @@
 .span-two {
     width: 65px;
     height: 40%;
-    display:inline;
-    /*margin-top: -52%;
-    margin-left: -123%;*/
+    display: inline;
+    margin-top: -30px;
+    margin-left: -101px;
 }
-.span-one {
+
+ .span-one
+
+{
     width: 65px;
     height: 40%;
     display: inline;
-    /*margin-top: 20%;*/
+    margin-top: 13px;
+    margin-left: -35%;
 }
 .slidh {
     margin-top: 6%;
@@ -526,6 +599,36 @@
     margin-left: -31%;*/
     
 }
+/*.slider.slider-horizontal {
+    width: 297px;
+    height: 21px;
+    /* margin-top: -150%; */
+    /*margin-top: -149% !important;
+    margin-left: 31%;*/
+/*}*/
+.slider.slider-horizontal {
+    width: 316%;
+    height: 21px;
+    /* margin-top: -150%; */
+    margin-top: -136% !important;
+    margin-left: 73%;
+}
+.radio-inline, .checkbox-inline {
+    display: inline-block;
+    padding-left: 348px;
+    margin-bottom: 6px;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.stylFormGroup {
+    margin-top: 37%;
+}
+
+.radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+    margin-left: -40px;
+}
+
 @media screen and (max-width: 767px) {
     .select-two {
         margin-left: auto;
@@ -540,11 +643,10 @@
     .col1 {
         
     }
+   
 
-    
     .btn-two {
-      width:49%;
-    
+        width: 49%;
     }
     .btn-one {
         width: 49%;
@@ -561,9 +663,107 @@
       
     }
     .formStyl {
-       
+        margin-top: -38%;
     }
     .slidStyle {
         
+    }
+    .radio-inline, .checkbox-inline {
+        display: inline-block;
+        padding-left: 393px;
+        margin-bottom: -97px;
+        font-weight: 400;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: -28px;
+    }
+    .DivPlayers {
+        margin-left: 20px;
+
+    }
+}
+
+.StyleRadio {
+    margin-top: -7%;
+    margin-left: 46%;
+}
+.inputStyle {
+    margin-top: 15px;
+}
+@media screen and (max-width: 991px) {
+    .stylFormGroup {
+        margin-top: 11%;
+    }
+
+    .DivPlayers {
+        margin-left: 170px;
+    }
+
+    .StyleRadio {
+        margin-top: -3%;
+        margin-left: 28%;
+    }
+    .inputStyle {
+        margin-top: 53px;
+        margin-left: -29%;
+    }
+}
+
+.radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+    position: absolute;
+    margin-top: 4px \9;
+    margin-left: -40px;
+}
+
+@media screen and (max-width:745px) {
+
+    .DivPlayers {
+        margin-left: 17%;
+    }
+    .formStyl {
+        margin-left: 96%;
+        margin-top: -7% !important;
+    }
+    .srch {     
+          margin-top: 10%;
+    }
+       
+    }
+@media screen and (max-width:947px) {
+    .formStyl {
+        margin-left: 100%;
+    }
+    .StylNav {
+        width: 110.4% !important;
+        margin-left: 6% !important;
+    }
+    .srch {
+        margin-top: 24%;
+    }
+    .progress-bar1 {
+        margin-top: 0% !important;
+    }
+    .DivPlayers {
+        margin-left: 82px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .DivPlayers {
+        margin-left: 93px;
+    }
+}
+@media screen and (max-width: 938px) {
+    .DivPlayers {
+        margin-left: 168px;
+    }
+}
+@media screen and (max-width: 386px) {
+    .DivPlayers {
+        margin-left: 16%;
+    }
+}
+@media screen and (max-width: 377px) {
+    .DivPlayers {
+        margin-left: 16%;
     }
 }

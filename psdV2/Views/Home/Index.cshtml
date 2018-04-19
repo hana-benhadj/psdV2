@@ -9,7 +9,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-<link href="~/Content/style.css" rel="stylesheet" />
 
 <link href="~/Content/bootstrap-slider.css" rel="stylesheet" />
 <script src="~/Content/bootstrap-slider.js"></script>
@@ -18,14 +17,18 @@
 <script src="~/Content/bootstrap-tagsinput.js"></script>
 <link href="~/Content/bootstrap-tagsinput.css" rel="stylesheet" />
 <link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/Content/style.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+
 
 @*nav bar*@
 
-@*<ul class="nav nav-pills nav-justified"
-    style="    width: 110.4%!important;
-            margin-left: -6%;
-            background-color: #6D7B8D!important;
-              padding-top: 0%;">
+<ul class="StylNav nav nav-pills nav-justified "
+    style="background-color: #6D7B8D!important;padding-top: 0%;">
     <li class="nav-item">
         <a class="nav-item item" href="#">HOME</a>
     </li>
@@ -41,7 +44,7 @@
     <li class="nav-item">
         <a class="nav-link item" href="#">CONTACT</a>
     </li>
-</ul><br>*@
+</ul><br>
 @*First row contains 3 cols*@
 <div class="row" style="margin-top: 2%;">
     <div class="col-lg col1" style="height:400px;width:100%;text-align:center;">
@@ -53,30 +56,26 @@
     </div>
     <div class="col-lg col1" style="height:400px;">
         @Html.Partial("Inputs")
-      
+
     </div>
 </div>
 @*second row contains 2 cols*@
-@*<div class="row" style="
-    margin-right: -126px;
-    margin-left: -67px;">
+<div class="row" style="margin-top:80px;">
     <div class="col-md-8 stnav">
         @Html.Partial("PsdTabs")
     </div>
-   
+
+
     <div class="col-md-4 col1">
         <div class="input-group">
             <input class="form-control srch" placeholder="SEARCH" style=" border-radius: 51px;">
         </div>
-        @*<img src="~/Content/progress.PNG" style="width: 73%;
-            margin-left: 14%;
-            margin-top: 6%;" />*@
-        @*<div class="stt">
+        <div class="stt">
             @Html.Partial("Progress")
         </div>
 
     </div>
-</div>*@
+</div>
 @section Scripts{
     <script src="~/Content/jQuery-plugin-progressbar.js"></script>
     <script>
