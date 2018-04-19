@@ -6918,3 +6918,33 @@ fieldset[disabled] .btn {
         margin-bottom: 25%;
     }
 }
+/*@media screen and (max-width: 1189px) {
+    .form-control {
+        width: 96%;
+    }
+}*/
+@media screen and (max-width: 1199px) {
+    .form-control {
+        display: block;
+        width: 60%!important;
+    }
+        img {
+        vertical-align: middle;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1189px) {
+    .form-control {
+        display: block;
+        width: 60% !important;
+    }
+
+    img {
+        vertical-align: middle;
+        width: 45%;
+    }
+}
+@media screen and (max-width: 988px) {
+  
+}

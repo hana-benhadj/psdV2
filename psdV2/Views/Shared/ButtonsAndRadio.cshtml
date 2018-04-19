@@ -1,20 +1,20 @@
 ﻿<style>
-    .col-lg-2 {
+    /*.col-lg-2 {
         border: solid;
         height: 400px;
-    }
+    }*/
    
    
 
     .checkmark {
-        position: absolute;
+        /*position: absolute;
         top: -25px;
-        left: -6px;
-        height: 52px;
+        left: -6px;*/
+        /*height: 52px;
         width: 43px;
         background-color: #24AFB2;
         border-radius: 50%;
-        border-color:white;
+        border-color:white;*/
     }
   
 </style>
@@ -22,41 +22,34 @@
 <link href="~/Content/style.css" rel="stylesheet" />
 
    @*we have 2 div each one contains 2 buttons*@
-<div class="" style="margin-top: 17%;
-    margin-left: 28%;">
-    <button type="button" class="btn btn-default bt" style="       margin-top: -32%;
-    margin-left: -31%;     background-color: #6D7B8D; border-radius: 0%;    height: 45px;">
-        BUTTON
-    </button>
-    <button type="button" class="btn-two btn btn-default bt" style="
-  
-    border-radius: 0%;
-   
-    background-color: #24AFB2;">BUTTON</button>
-</div>
-<div class="" style="margin-top: 20%;
-    margin-left: -40%;     height: 45px;">
-    <button type="button" class="btn-three btn btn-default bt " style="      border-radius: 0%;
+<div class="" style="margin-top: -20px; margin-bottom:20px;width:100%;text-align:center; ">
+    <div style="margin-top: 20px; margin-bottom:20px;">
+        <button type="button" class="btn-one btn btn-default bt" style="background-color: #6D7B8D; border-radius: 0; height:45px">
+            BUTTON
+        </button>
+        <button type="button" class="btn-two btn btn-default bt" style="border-radius: 0%; background-color: #24AFB2;">BUTTON</button>
+    </div>
+    <div class="" style="margin-top: 20px; margin-bottom:50px;">
+        <button type="button" class="btn-three btn btn-default bt " style="border-radius: 0%;background-color: #333A42;">
+            BUTTON
+        </button>
+        <button type="button" class="btn-four btn btn-default bt " style=" background-color: #333A42; border-radius: 0;">
+            BUTTON
+        </button>
+    </div>
 
-    background-color: #333A42;">
-        BUTTON
-    </button>
-    <button type="button" class="btn-four btn btn-default bt " style=" background-color: #333A42; border-radius: 0%;">
-        BUTTON
-    </button>
-    
     @*we have 2 radio buttons*@
-    <form>
-        <label class="radio-inline" style="       margin-top: 19%;
-    margin-left: 39%;">
-            <input type="radio" class="checkmark" name="optradio" style=" margin-top: 75%;
-    margin-left: 9%;">option
-        </label>
-        <label class="radio-inline" style="   margin-left: 20%;
-    margin-top: 19%;">
-            <input type="radio" class="checkmark" name="optradio" style="  margin-top: 75%;
-    margin-left: 48%;">selected
-        </label>
+    <div style=" width:100%; text-align:center;">
+       
+        <form class="formStyl">
+            <label class="radio-inline" style="margin-left:-270px;">
+                <input type="radio" class="checkmark" name="optradio" style="">option
+            </label>
+            <label class="radio-inline" style="margin-left:-200px;">
+                <input type="radio" class="checkmark" name="optradio" style="">selected
+            </label>
 
-    </form>
+        </form>
+    </div>
 </div>
+

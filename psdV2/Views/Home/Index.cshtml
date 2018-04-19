@@ -5,7 +5,6 @@
 <title>Bootstrap Example</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -20,22 +19,9 @@
 <link href="~/Content/bootstrap-tagsinput.css" rel="stylesheet" />
 <link href="~/Content/Site.css" rel="stylesheet" />
 
-<style>
-    .item {
-        font-size: 22px;
-        color: white;
-    }
-
-    .col1 {
-        /*border: solid;*/
-        padding-bottom: 30%;
-        height: 100px;
-    }
-</style>
-
 @*nav bar*@
 
-<ul class="nav nav-pills nav-justified"
+@*<ul class="nav nav-pills nav-justified"
     style="    width: 110.4%!important;
             margin-left: -6%;
             background-color: #6D7B8D!important;
@@ -55,49 +41,45 @@
     <li class="nav-item">
         <a class="nav-link item" href="#">CONTACT</a>
     </li>
-</ul><br>
+</ul><br>*@
 @*First row contains 3 cols*@
-<div class="row" style="
-    flex-wrap: wrap;
-    margin-right: -126px;
-    margin-left: -67px;
-    /*border: solid;*/
-    margin-top: 2%;">
-    <div class="col-md-4 col1">
+<div class="row" style="margin-top: 2%;">
+    <div class="col-lg col1" style="height:400px;width:100%;text-align:center;">
         @Html.Partial("List")
     </div>
-    <div class="col-md-4 col1">
+    <div class="col-lg col1" style="height:400px;">
         @Html.Partial("ButtonsAndRadio")
-        @Html.Partial("PlayerButtons")
+        @*@Html.Partial("PlayerButtons")*@
     </div>
-    <div class="col-md-4 col1">
+    <div class="col-lg col1" style="height:400px;">
         @Html.Partial("Inputs")
+      
     </div>
 </div>
 @*second row contains 2 cols*@
-<div class="row" style="
+@*<div class="row" style="
     margin-right: -126px;
     margin-left: -67px;">
     <div class="col-md-8 stnav">
         @Html.Partial("PsdTabs")
     </div>
+   
     <div class="col-md-4 col1">
         <div class="input-group">
-            <input class="form-control srch" placeholder="SEARCH" style=" border-radius: 51px;" >
+            <input class="form-control srch" placeholder="SEARCH" style=" border-radius: 51px;">
         </div>
         @*<img src="~/Content/progress.PNG" style="width: 73%;
             margin-left: 14%;
             margin-top: 6%;" />*@
-        <div>
+        @*<div class="stt">
             @Html.Partial("Progress")
         </div>
 
     </div>
-</div>
+</div>*@
 @section Scripts{
     <script src="~/Content/jQuery-plugin-progressbar.js"></script>
     <script>
         $(".progress-bar1").loading();
-
     </script>
 }
