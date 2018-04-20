@@ -538,9 +538,8 @@
         margin-top: 62%;
     }
     }*/
-.stylFormGroup {
-    margin-top: 5%;
-}
+
+
 /*@media screen and (max-width: 988px) {
     .cont {     
         margin-left: 9% !important;
@@ -621,9 +620,7 @@
     vertical-align: middle;
     cursor: pointer;
 }
-.stylFormGroup {
-    margin-top: 37%;
-}
+
 
 .radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
     margin-left: -40px;
@@ -714,9 +711,13 @@
     margin-top: 4px \9;
     margin-left: -40px;
 }
+.colLeft{
 
+}
+.stylFormGroup {
+    margin-top: 40%;
+}
 @media screen and (max-width:745px) {
-
     .DivPlayers {
         margin-left: 17%;
     }
@@ -825,6 +826,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.inputPlacement{
+
+}
 @media screen and (max-width: 760px) {
     .DivPlayers {
         margin-left: 55px;
@@ -842,11 +846,11 @@
 
     
 }
-@media screen and (max-width: 980px) {
+/*@media screen and (max-width: 980px) {
     .DivPlayers {
         margin-left: 171px;
     }
-}
+}*/
 @media screen and (max-width: 729px) {
     .DivPlayers {
         margin-left: 52px;
@@ -855,5 +859,73 @@
 @media screen and (max-width: 335px) {
     .DivPlayers {
         margin-left: -11px;
+    }
+}
+@media screen and (max-width: 841px) {
+    .colLeft {
+        margin-left: -31%;
+        margin-top: -5%;
+    }
+
+    .inputPlacement {
+        margin-left: 61%;
+        margin-top: -53%;
+    }
+
+    .srch {
+        margin-top: 0%;
+    }
+
+    .stt {
+        margin-left: -17%;
+    }
+
+    .stylFormGroup {
+        margin-top: 6%;
+    }
+
+    form {
+        margin-top: -13%;
+        margin-left: 38%;
+        margin-right: -21%;
+    }
+    
+}
+@media screen and (max-width: 991px) {
+    .stylFormGroup {
+        margin-top: 2%;
+    }
+    .colLeft {
+        margin-left: -9%;
+        margin-top: -15%;
+    }
+    .DivPlayers {
+        margin-left: 169px;
+    }
+}
+@media screen and (max-width: 766px) {
+    .form {
+        margin-top: 115%;
+        margin-left: -204%;
+        margin-right: -21%;
+    }
+    .colLeft {
+        margin-left: -9%;
+        margin-top: -25%;
+    }
+    .DivPlayers {
+        margin-left: 74px;
+ }
+    .srch {
+        margin-top: 11%;
+    }
+    cont {
+        margin-top: 9%;
+        margin-left: 30% !important;
+    }
+    }
+@media screen and (max-width: 757px) {
+    .stylFormGroup {
+        margin-top: -4%;
     }
 }
