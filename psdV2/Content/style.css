@@ -767,3 +767,93 @@
         margin-left: 16%;
     }
 }
+
+@media screen and (max-width: 562px) {
+    .DivPlayers {
+        margin-left: 17%;
+    }
+}
+@media screen and (max-width: 424px) {
+    .DivPlayers {
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 378px) {
+    .DivPlayers {
+        margin-left: 10px;
+        margin-top: -12%;
+    }
+}
+@media screen and (max-width: 347px) {
+    .DivPlayers {
+        margin-left: -7px;
+    }
+}
+@media screen and (max-width: 268px) {
+    .DivPlayers {
+        margin-top: -17%;
+        margin-left: -50px;
+    }
+}
+/*@media screen and (max-width: 1070px) {
+    .DivPlayers {
+        margin-top: -2%;
+        margin-left: -60px;
+    }
+    .stylFormGroup {
+        margin-top: 75%;
+    }
+}
+.DivButtons {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}*/
+/*@media screen and (max-width: 909px) {
+    DivButtons {
+        margin-top: -174px;
+        margin-bottom: 20px;     
+        margin-left: 1% !important;
+    }
+    .DivPlayers {
+        margin-left: 170px;
+    }
+    .stylFormGroup {
+        margin-top: 75%;
+    }
+}*/
+.ButtDiv {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 760px) {
+    .DivPlayers {
+        margin-left: 55px;
+    }
+    .ButtDiv {
+        margin-top: -66px;
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (max-width: 1193px) {
+    .DivPlayers {
+        margin-left: -56px;
+    }
+
+    
+}
+@media screen and (max-width: 980px) {
+    .DivPlayers {
+        margin-left: 171px;
+    }
+}
+@media screen and (max-width: 729px) {
+    .DivPlayers {
+        margin-left: 52px;
+    }
+}
+@media screen and (max-width: 335px) {
+    .DivPlayers {
+        margin-left: -11px;
+    }
+}
